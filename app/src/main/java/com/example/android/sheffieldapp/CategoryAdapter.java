@@ -9,8 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class CategoryAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
-    //private String tabTitles[] = new String[] { "NUMBERS", "FAMILY", "COLOURS", "PHRASES" };
-
     public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
@@ -18,35 +16,35 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        //if (position == 0) {
-        return new SportsFragment();
-
-//        } else if (position == 1){
-//            return new FamilyFragment();
-//        } else if (position == 2){
-//            return new ColorsFragment();
-//        } else {
-//            return new PhrasesFragment();
-//        }
+        if (position == 0) {
+            return new TravelFragment();
+        } else if (position == 1) {
+            return new POIFragment();
+        } else if (position == 2) {
+            return new SportsFragment();
+        } else {
+            return new NightclubFragment();
+        }
     }
 
     @Override
     public int getCount() {
         return 4;
     }
-//    @Override
-//    public CharSequence getPageTitle(int position) {
-//        // Generate title based on item position
-//        if (position == 0) {
-//            return mContext.getString(R.string.category_numbers);
-//        } else if (position == 1) {
-//            return mContext.getString(R.string.category_family);
-//        } else if (position == 2) {
-//            return mContext.getString(R.string.category_colors);
-//        } else {
-//            return mContext.getString(R.string.category_phrases);
-//            //return tabTitles[position];
-//        }
-//    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        //Generate title based on item position
+        if (position == 0) {
+            return mContext.getString(R.string.tab_travel);
+        } else if (position == 1) {
+            return mContext.getString(R.string.tab_poi);
+        } else if (position == 2) {
+            return mContext.getString(R.string.tab_sport);
+        } else {
+            return mContext.getString(R.string.tab_club);
+        }
+    }
+
 }
 

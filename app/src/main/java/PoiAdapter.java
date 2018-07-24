@@ -14,9 +14,7 @@ import com.example.android.sheffieldapp.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by Ha3el on 15/04/2018.
- */
+
 
 public class PoiAdapter extends ArrayAdapter<com.example.android.sheffieldapp.Poi> {
 
@@ -34,26 +32,24 @@ public class PoiAdapter extends ArrayAdapter<com.example.android.sheffieldapp.Po
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.poi_item, parent, false);
         }
-        // Get the playlist object located at this position in the list
-        com.example.android.sheffieldapp.Poi currentPlaylist = getItem(position);
+        // Get the bject located at this position in the list
+        com.example.android.sheffieldapp.Poi currentSelection = getItem(position);
 
         // Find and update the ImageView in the playlist_item.xml layout with the image ID
         ImageView playlistImageView = listItemView.findViewById(R.id.image);
-        playlistImageView.setImageResource(currentPlaylist.getImageResourceId());
+        playlistImageView.setImageResource(currentSelection.getImageResourceId());
 
         // Find and update the TextView in the playlist_item.xml layout with the ID playlist_name
         TextView playlistNameTextView = listItemView.findViewById(R.id.title);
-        playlistNameTextView.setText(currentPlaylist.getTitle());
+        playlistNameTextView.setText(currentSelection.getTitle());
 
         // Find and update the TextView in the playlist_item.xml layout with the ID Genre
-        TextView genreTextView = listItemView.findViewById(R.id.address);
-        genreTextView.setText(currentPlaylist.getAddress());
+        TextView addressTextView = listItemView.findViewById(R.id.address);
+        addressTextView.setText(currentSelection.getAddress());
 
         // Find and update the TextView in the playlist_item.xml layout with the ID num_tracks
-        TextView tracksTextView = listItemView.findViewById(R.id.web);
-        tracksTextView.setText(currentPlaylist.getWeb());
-
-
+        TextView websiteTextView = listItemView.findViewById(R.id.web);
+        websiteTextView.setText(currentSelection.getWeb());
 
 
         return listItemView;

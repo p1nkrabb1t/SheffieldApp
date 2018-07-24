@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Sheffield App</string>
-
+    <string name="tab_travel">Travel Links</string>
+    <string name="tab_poi">Points Of Interest</string>
+    <string name="tab_sport">Stadiums &amp; Sports</string>
+    <string name="tab_club">Night Life</string>
+    <string name="image">image</string>
 
 </resources>

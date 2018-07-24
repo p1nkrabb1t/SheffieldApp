@@ -24,13 +24,13 @@ public class SportsFragment extends Fragment {
 
         // Create an arraylist of custom objects
         final ArrayList<com.example.android.sheffieldapp.Poi> sports = new ArrayList<com.example.android.sheffieldapp.Poi>();
-        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield Wednesday Football Ground", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield United Football Ground", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Ponds Forge Leisure Centre", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Hillsborough Leisure Centre", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("English Institute of Sport", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Concord Sports Centre", "sheffled", "www"));
-
+        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield Wednesday Football Ground", "Hillsborough", "https://www.swfc.co.uk/"));
+        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield United Football Ground", "Sheffled Centre", "https://www.sufc.co.uk/"));
+        sports.add(new com.example.android.sheffieldapp.Poi("Ponds Forge Leisure Centre", "Sheffled Centre", "https://www.siv.org.uk/page/ponds-forge"));
+        sports.add(new com.example.android.sheffieldapp.Poi("Hillsborough Leisure Centre", "Hillsborough", "https://www.siv.org.uk/page/hillsborough-leisure-centre"));
+        sports.add(new com.example.android.sheffieldapp.Poi("English Institute of Sport", "Attercliffe", "https://www.siv.org.uk/page/eis-sheffield"));
+        sports.add(new com.example.android.sheffieldapp.Poi("Concord Sports Centre", "Shiregreen", "https://www.siv.org.uk/page/concord-sports-centre"));
+        sports.add(new com.example.android.sheffieldapp.Poi("Ice Sheffield", "Attercliffe", "https://www.siv.org.uk/page/icesheffield"));
 
         com.example.android.sheffieldapp.PoiAdapter adapter = new com.example.android.sheffieldapp.PoiAdapter(getActivity(), sports);
 

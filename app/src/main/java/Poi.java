@@ -19,7 +19,6 @@ public class Poi {
     private String mWeb;
 
 
-
     /**
      * Constructs a new object containing image, name, genre, number of tracks and length
      */
@@ -56,9 +55,7 @@ public class Poi {
     }
 
     //get the POI location
-    public String getAddress() {
-        return ("Genre: " + mAddress);
-    }
+    public String getAddress() {return mAddress; }
 
     //allow a new POI address to be added
     public void setAddress(String Address) {
@@ -67,14 +64,13 @@ public class Poi {
 
     //get the number of tracks
     public String getWeb() {
-        return (mWeb);
+        return mWeb;
     }
 
     //allow a new POI website to be added
     public void setWeb(String Website) {
         mWeb = Website;
     }
-
 
 
 }
