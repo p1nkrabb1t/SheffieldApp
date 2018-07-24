@@ -6,10 +6,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 
-import com.example.android.sheffieldapp.SportsFragment;
-
-
-
 public class CategoryAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
@@ -23,7 +19,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         //if (position == 0) {
-            return new SportsFragment();
+        return new SportsFragment();
 
 //        } else if (position == 1){
 //            return new FamilyFragment();

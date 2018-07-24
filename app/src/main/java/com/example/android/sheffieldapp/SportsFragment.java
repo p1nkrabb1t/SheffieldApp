@@ -6,17 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ListView;
+
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class SportsFragment extends Fragment {
-
 
 
     public SportsFragment() {
@@ -39,10 +36,8 @@ public class SportsFragment extends Fragment {
         sports.add(new com.example.android.sheffieldapp.Poi("Concord Sports Centre", "sheffled", "www"));
 
 
-
         com.example.android.sheffieldapp.PoiAdapter adapter = new com.example.android.sheffieldapp.PoiAdapter(getActivity(), sports);
         //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
-
 
 
         GridView gridView = (GridView) rootView.findViewById(R.id.list);
@@ -54,8 +49,6 @@ public class SportsFragment extends Fragment {
 
 
     }
-
-
 
 
 }
