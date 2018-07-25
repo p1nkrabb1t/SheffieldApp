@@ -45,7 +45,6 @@ public class NightclubFragment extends Fragment {
 
         gridView.setAdapter(adapter);
 
-
         return rootView;
     }
 
