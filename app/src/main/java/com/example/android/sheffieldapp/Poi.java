@@ -1,9 +1,6 @@
 package com.example.android.sheffieldapp;
 
 
-/**
- * Displays brief playlist summary
- */
 public class Poi {
 
     // Integer value
@@ -37,7 +34,7 @@ public class Poi {
     private int mIcon5Id;
 
     /**
-     * Constructs a new object containing image, name, genre, number of tracks and length
+     * Constructs a new object containing name, address and website
      */
     public Poi(String Title, String Address, String Website) {
         mTitle = Title;
@@ -47,7 +44,7 @@ public class Poi {
     }
 
     /**
-     * Constructs a new object containing image, name, genre, number of tracks and length
+     * Constructs a new object containing image, name, address and website
      */
     public Poi(int ImageResourceId, String Title, String Address, String Website) {
         mImageResourceId = ImageResourceId;
