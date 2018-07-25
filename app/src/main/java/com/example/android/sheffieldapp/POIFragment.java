@@ -22,7 +22,7 @@ public class POIFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.list_holder, container, false);
+        View rootView = inflater.inflate(R.layout.grid_holder, container, false);
 
         // Create an arraylist of custom objects
         final ArrayList<Poi> poi = new ArrayList<>();

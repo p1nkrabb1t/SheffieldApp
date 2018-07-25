@@ -13,10 +13,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class PoiAdapter extends ArrayAdapter<com.example.android.sheffieldapp.Poi> {
+public class PoiAdapter extends ArrayAdapter<Poi> {
 
-    public PoiAdapter(Activity context, ArrayList<com.example.android.sheffieldapp.Poi> playlistsAvailable) {
-        super(context, 0, playlistsAvailable);
+    public PoiAdapter(Activity context, ArrayList<Poi> poi_shown) {
+        super(context, 0, poi_shown);
     }
 
     @NonNull
@@ -29,22 +29,22 @@ public class PoiAdapter extends ArrayAdapter<com.example.android.sheffieldapp.Po
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.poi_item, parent, false);
         }
-        // Get the bject located at this position in the list
-        com.example.android.sheffieldapp.Poi currentSelection = getItem(position);
+        // Get the object located at this position in the list
+        Poi currentSelection = getItem(position);
 
-        // Find and update the ImageView in the playlist_item.xml layout with the image ID
-        ImageView playlistImageView = listItemView.findViewById(R.id.image);
-        playlistImageView.setImageResource(currentSelection.getImageResourceId());
+        // Find and update the ImageView in the poi_item.xml layout with the image ID
+        ImageView poiImageView = listItemView.findViewById(R.id.image);
+        poiImageView.setImageResource(currentSelection.getImageResourceId());
 
-        // Find and update the TextView in the playlist_item.xml layout with the ID playlist_name
-        TextView playlistNameTextView = listItemView.findViewById(R.id.title);
-        playlistNameTextView.setText(currentSelection.getTitle());
+        // Find and update the TextView in the poi_item.xml layout with the title
+        TextView nameTextView = listItemView.findViewById(R.id.title);
+        nameTextView.setText(currentSelection.getTitle());
 
-        // Find and update the TextView in the playlist_item.xml layout with the ID Genre
+        // Find and update the TextView in the poi_item.xml layout with the address
         TextView addressTextView = listItemView.findViewById(R.id.address);
         addressTextView.setText(currentSelection.getAddress());
 
-        // Find and update the TextView in the playlist_item.xml layout with the ID num_tracks
+        // Find and update the TextView in the poi_item.xml layout with the website address
         TextView websiteTextView = listItemView.findViewById(R.id.web);
         websiteTextView.setText(currentSelection.getWeb());
 
