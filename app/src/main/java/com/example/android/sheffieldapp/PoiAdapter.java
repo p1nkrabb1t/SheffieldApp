@@ -10,10 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.sheffieldapp.R;
-
 import java.util.ArrayList;
-
 
 
 public class PoiAdapter extends ArrayAdapter<com.example.android.sheffieldapp.Poi> {

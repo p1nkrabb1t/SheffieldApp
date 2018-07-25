@@ -25,18 +25,18 @@ public class TravelFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_holder, container, false);
 
         // Create an arraylist of custom objects
-        final ArrayList<com.example.android.sheffieldapp.Poi> sports = new ArrayList<com.example.android.sheffieldapp.Poi>();
-        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield Wednesday Football Ground", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield United Football Ground", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Ponds Forge Leisure Centre", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Hillsborough Leisure Centre", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("English Institute of Sport", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Concord Sports Centre", "sheffled", "www"));
+        final ArrayList<Poi> sports = new ArrayList<Poi>();
+        sports.add(new Poi("Sheffield Wednesday Football Ground", "sheffled", "www"));
+        sports.add(new Poi("Sheffield United Football Ground", "sheffled", "www"));
+        sports.add(new Poi("Ponds Forge Leisure Centre", "sheffled", "www"));
+        sports.add(new Poi("Hillsborough Leisure Centre", "sheffled", "www"));
+        sports.add(new Poi("English Institute of Sport", "sheffled", "www"));
+        sports.add(new Poi("Concord Sports Centre", "sheffled", "www"));
 
 
-        com.example.android.sheffieldapp.PoiAdapter adapter = new com.example.android.sheffieldapp.PoiAdapter(getActivity(), sports);
+        PoiAdapter adapter = new PoiAdapter(getActivity(), sports);
 
-        GridView gridView = (GridView) rootView.findViewById(R.id.list);
+        GridView gridView = rootView.findViewById(R.id.list);
 
         gridView.setAdapter(adapter);
 

@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:horizontalSpacing="8dp"
+    android:horizontalSpacing="@dimen/spc_XS"
     android:numColumns="2"
     android:orientation="vertical"
     android:paddingBottom="@dimen/pad_M"
     android:paddingLeft="@dimen/pad_M"
     android:paddingRight="@dimen/pad_M"
     android:paddingTop="@dimen/pad_M"
-    android:verticalSpacing="8dp" />
+    android:verticalSpacing="@dimen/spc_XS" />

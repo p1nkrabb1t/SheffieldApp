@@ -5,4 +5,5 @@
     <dimen name="pad_S">12dp</dimen>
     <dimen name="pad_M">16dp</dimen>
     <dimen name="image_square">150dp</dimen>
+    <dimen name="spc_XS">8dp</dimen>
 </resources>

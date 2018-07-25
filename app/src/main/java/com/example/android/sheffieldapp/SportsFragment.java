@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+
 import java.util.ArrayList;
 
 public class SportsFragment extends Fragment {
@@ -23,18 +24,25 @@ public class SportsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_holder, container, false);
 
         // Create an arraylist of custom objects
-        final ArrayList<com.example.android.sheffieldapp.Poi> sports = new ArrayList<com.example.android.sheffieldapp.Poi>();
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.swfc, "Sheffield Wednesday Football Ground", "Hillsborough", "https://www.swfc.co.uk/"));
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.sufc,"Sheffield United Football Ground", "Sheffled Centre", "https://www.sufc.co.uk/"));
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.pondsforge,"Ponds Forge Leisure Centre", "Sheffled Centre", "https://www.siv.org.uk/page/ponds-forge"));
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.hillslc,"Hillsborough Leisure Centre", "Hillsborough", "https://www.siv.org.uk/page/hillsborough-leisure-centre"));
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.eis,"English Institute of Sport", "Attercliffe", "https://www.siv.org.uk/page/eis-sheffield"));
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.concord,"Concord Sports Centre", "Shiregreen", "https://www.siv.org.uk/page/concord-sports-centre"));
-        sports.add(new com.example.android.sheffieldapp.Poi(R.drawable.icesheff,"Ice Sheffield", "Attercliffe", "https://www.siv.org.uk/page/icesheffield"));
+        final ArrayList<Poi> sports = new ArrayList<Poi>();
+        sports.add(new Poi(R.drawable.swfc, "Sheffield Wednesday Football Ground",
+                "Hillsborough", "https://www.swfc.co.uk/"));
+        sports.add(new Poi(R.drawable.sufc, "Sheffield United Football Ground",
+                "Sheffled Centre", "https://www.sufc.co.uk/"));
+        sports.add(new Poi(R.drawable.pondsforge, "Ponds Forge Leisure Centre",
+                "Sheffled Centre", "https://www.siv.org.uk/page/ponds-forge"));
+        sports.add(new Poi(R.drawable.hillslc, "Hillsborough Leisure Centre", "Hillsborough",
+                "https://www.siv.org.uk/page/hillsborough-leisure-centre"));
+        sports.add(new Poi(R.drawable.eis, "English Institute of Sport", "Attercliffe",
+                "https://www.siv.org.uk/page/eis-sheffield"));
+        sports.add(new Poi(R.drawable.concord, "Concord Sports Centre", "Shiregreen",
+                "https://www.siv.org.uk/page/concord-sports-centre"));
+        sports.add(new Poi(R.drawable.icesheff, "Ice Sheffield", "Attercliffe",
+                "https://www.siv.org.uk/page/icesheffield"));
 
-        com.example.android.sheffieldapp.PoiAdapter adapter = new com.example.android.sheffieldapp.PoiAdapter(getActivity(), sports);
+        PoiAdapter adapter = new PoiAdapter(getActivity(), sports);
 
-        GridView gridView = (GridView) rootView.findViewById(R.id.list);
+        GridView gridView = rootView.findViewById(R.id.list);
 
         gridView.setAdapter(adapter);
 

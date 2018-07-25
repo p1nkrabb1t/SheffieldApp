@@ -11,33 +11,33 @@
         android:id="@+id/image"
         android:layout_width="@dimen/image_square"
         android:layout_height="@dimen/image_square"
-        android:contentDescription="@string/image"
         android:layout_gravity="center"
+        android:contentDescription="@string/image"
         tools:src="" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/pad_XXS"
         android:textStyle="bold"
-        tools:text="Ponds Forge"
-        android:paddingBottom="@dimen/pad_XXS"/>
+        tools:text="Ponds Forge" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="map"
-        android:text="address..."
-        android:paddingBottom="@dimen/pad_XXS"/>
+        android:paddingBottom="@dimen/pad_XXS"
+        tools:text="address..." />
 
     <TextView
         android:id="@+id/web"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="web"
-        tools:text="www."
-        android:paddingBottom="@dimen/pad_S" />
+        android:paddingBottom="@dimen/pad_S"
+        tools:text="www." />
 
 
 </LinearLayout>

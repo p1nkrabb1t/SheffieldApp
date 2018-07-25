@@ -55,7 +55,9 @@ public class Poi {
     }
 
     //get the POI location
-    public String getAddress() {return mAddress; }
+    public String getAddress() {
+        return mAddress;
+    }
 
     //allow a new POI address to be added
     public void setAddress(String Address) {

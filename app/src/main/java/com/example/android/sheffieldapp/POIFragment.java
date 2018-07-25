@@ -25,18 +25,36 @@ public class POIFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_holder, container, false);
 
         // Create an arraylist of custom objects
-        final ArrayList<com.example.android.sheffieldapp.Poi> sports = new ArrayList<com.example.android.sheffieldapp.Poi>();
-        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield Wednesday Football Ground", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Sheffield United Football Ground", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Ponds Forge Leisure Centre", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Hillsborough Leisure Centre", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("English Institute of Sport", "sheffled", "www"));
-        sports.add(new com.example.android.sheffieldapp.Poi("Concord Sports Centre", "sheffled", "www"));
+        final ArrayList<Poi> poi = new ArrayList<>();
+        poi.add(new Poi(R.drawable.cathedral, "Sheffield Cathedral",
+                "Church St, Sheffield, S1 1HA", "http://www.sheffieldcathedral.org"));
+        poi.add(new Poi(R.drawable.cityhall, "City Hall",
+                "Barker's Pool, Sheffield, S1 2JA", "https://sheffieldcityhall.sivtickets.com"));
+        poi.add(new Poi(R.drawable.millenium, "Millenium Gallery",
+                "48 Arundel Gate, Sheffield, S1 2PP", "http://www.museums-sheffield.org.uk/museums/millennium-gallery/home"));
+        poi.add(new Poi(R.drawable.wintergarden, "Winter Garden", "90 Surrey St, Sheffield, S1 2LH",
+                "https://www.sheffield.gov.uk/home/parks-sport-recreation/public-spaces/winter-garden.html"));
+        poi.add(new Poi(R.drawable.fountains, "Peace Gardens", "50 Pinstone St, Sheffield, S1 2HH",
+                "https://www.sheffield.gov.uk/home/parks-sport-recreation/public-spaces/peace-gardens"));
+        poi.add(new Poi(R.drawable.botanical, "Botanical Gardens",
+                "Clarkehouse Rd, Sheffield, S10 2LN", "http://www.sbg.org.uk"));
+        poi.add(new Poi(R.drawable.chatsworth, "Chatsworth House",
+                "Bakewell, DE45 1PP", "https://www.chatsworth.org"));
+        poi.add(new Poi(R.drawable.kelham, "Kelham Island Museum",
+                "Alma St, Sheffield, S3 8RY", "http://www.simt.co.uk"));
+        poi.add(new Poi(R.drawable.arena, "Sheffield Arena",
+                "Broughton Ln, Sheffield, S9 2DF", "http://www.flydsaarena.co.uk"));
+        poi.add(new Poi(R.drawable.crucible, "Crucible Theatre",
+                "55 Norfolk Street, Sheffield, S1 1DA", "https://www.sheffieldtheatres.co.uk"));
+        poi.add(new Poi(R.drawable.meadowhall, "Meadowhall Shopping Centre",
+                "Sheffield, S9 1EP", "https://www.meadowhall.co.uk"));
+        poi.add(new Poi(R.drawable.butterflyhouse, "Butterfly House",
+                "Woodsetts Rd, North Anston, Sheffield, S25 4EQ", "https://www.butterflyhouse.co.uk"));
 
 
-        com.example.android.sheffieldapp.PoiAdapter adapter = new com.example.android.sheffieldapp.PoiAdapter(getActivity(), sports);
+        PoiAdapter adapter = new PoiAdapter(getActivity(), poi);
 
-        GridView gridView = (GridView) rootView.findViewById(R.id.list);
+        GridView gridView = rootView.findViewById(R.id.list);
 
         gridView.setAdapter(adapter);
 
