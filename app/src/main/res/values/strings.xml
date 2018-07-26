@@ -53,22 +53,66 @@
     <string name="poi_butterfly">Butterfly House</string>
     <string name="loc_butterfly">Woodsetts Rd, North Anston, Sheffield, S25 4EQ</string>
 
+    //sports venues
+    <string name="poi_swfc">Sheffield Wednesday Football Ground</string>
+    <string name="loc_swfc">Hillsborough</string>
+    <string name="poi_sufc">Sheffield United Football Ground</string>
+    <string name="loc_sufc">Sheffled Centre</string>
+    <string name="poi_pondslc">Ponds Forge Leisure Centre</string>
+    <string name="loc_pondslc">Sheffled Centre</string>
+    <string name="poi_hillslc">Hillsborough Leisure Centre</string>
+    <string name="loc_hillslc">Hillsborough</string>
+    <string name="poi_eislc">English Institute of Sport</string>
+    <string name="loc_eislc">Attercliffe</string>
+    <string name="poi_concordlc">Concord Sports Centre</string>
+    <string name="loc_concordlc">Shiregreen</string>
+    <string name="poi_icesheff">Ice Sheffield</string>
+    <string name="loc_icesheff">Attercliffe</string>
 
+    //nightclubs
+    <string name="poi_area">Area</string>
+    <string name="loc_area">1 Burgess St, Sheffield, S1 2HF</string>
+    <string name="poi_plug">Plug Warehouse</string>
+    <string name="loc_plug">14-16 Matilda St, Sheffield, S1 4QD</string>
+    <string name="poi_code">Code:</string>
+    <string name="loc_code">28 Eyre St, Sheffield, S1 4QY</string>
+    <string name="poi_leadhill">The Leadmill</string>
+    <string name="loc_leadmill">6 Leadmill Rd, Sheffield, S1 4SE</string>
+    <string name="poi_corp">Corporation</string>
+    <string name="loc_corp">2 Milton St, Sheffield, S1 4JU</string>
+    <string name="poi_tnk">The Night Kitchen</string>
+    <string name="loc_tnk">7 Smithfield, Sheffield, S3 7AW</string>
+    <string name="poi_hopeworks">Hope Works</string>
+    <string name="loc_hopeworks">1A, Sussex Rd, Sheffield, S4 7YQ</string>
+
+
+    //web links
     <string name="web_cathedral">http://www.sheffieldcathedral.org</string>
     <string name="web_cityhall">https://sheffieldcityhall.sivtickets.com</string>
     <string name="web_millenium">http://www.museums-sheffield.org.uk/museums/millennium-gallery/home</string>
     <string name="web_winter">https://www.sheffield.gov.uk/home/parks-sport-recreation/public-spaces/winter-garden.html</string>
     <string name="web_peace">https://www.sheffield.gov.uk/home/parks-sport-recreation/public-spaces/peace-gardens</string>
-    <string name="botanical">http://www.sbg.org.uk</string>
+    <string name="web_botanical">http://www.sbg.org.uk</string>
     <string name="web_chatsworth">https://www.chatsworth.org</string>
     <string name="web_kelham">http://www.simt.co.uk</string>
     <string name="web_arena">http://www.flydsaarena.co.uk</string>
     <string name="web_crucible">https://www.sheffieldtheatres.co.uk</string>
     <string name="web_mhall">https://www.meadowhall.co.uk</string>
     <string name="web_butterfly">https://www.butterflyhouse.co.uk</string>
-
-    //sports
+    <string name="web_swfc">https://www.swfc.co.uk/</string>
+    <string name="web_sufc">https://www.sufc.co.uk/</string>
+    <string name="web_pondslc">https://www.siv.org.uk/page/ponds-forge</string>
+    <string name="web_hillslc">https://www.siv.org.uk/page/hillsborough-leisure-centre</string>
+    <string name="web_eislc">https://www.siv.org.uk/page/eis-sheffield</string>
+    <string name="web_concordlc">https://www.siv.org.uk/page/concord-sports-centre</string>
+    <string name="web_iceshefflc">https://www.siv.org.uk/page/icesheffield</string>
+    <string name="web_area">http://www.areasheffield.co.uk</string>
+    <string name="web_plug">https://the-plug.com</string>
+    <string name="web_code">http://codesheffield.com</string>
+    <string name="web_leadmill">https://www.leadmill.co.uk</string>
+    <string name="web_corp">http://www.corporation.org.uk</string>
+    <string name="web_tnk">http://www.thenightkitchen.org</string>
+    <string name="web_hopeworks">http://www.hope-works.co.uk</string>
     
-
 
 </resources>

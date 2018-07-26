@@ -25,20 +25,20 @@ public class SportsFragment extends Fragment {
 
         // Create an arraylist of custom objects
         final ArrayList<Poi> sports = new ArrayList<Poi>();
-        sports.add(new Poi(R.drawable.swfc, "Sheffield Wednesday Football Ground",
-                "Hillsborough", "https://www.swfc.co.uk/"));
-        sports.add(new Poi(R.drawable.sufc, "Sheffield United Football Ground",
-                "Sheffled Centre", "https://www.sufc.co.uk/"));
-        sports.add(new Poi(R.drawable.pondsforge, "Ponds Forge Leisure Centre",
-                "Sheffled Centre", "https://www.siv.org.uk/page/ponds-forge"));
-        sports.add(new Poi(R.drawable.hillslc, "Hillsborough Leisure Centre", "Hillsborough",
-                "https://www.siv.org.uk/page/hillsborough-leisure-centre"));
-        sports.add(new Poi(R.drawable.eis, "English Institute of Sport", "Attercliffe",
-                "https://www.siv.org.uk/page/eis-sheffield"));
-        sports.add(new Poi(R.drawable.concord, "Concord Sports Centre", "Shiregreen",
-                "https://www.siv.org.uk/page/concord-sports-centre"));
-        sports.add(new Poi(R.drawable.icesheff, "Ice Sheffield", "Attercliffe",
-                "https://www.siv.org.uk/page/icesheffield"));
+        sports.add(new Poi(R.drawable.swfc, getString(R.string.poi_swfc),
+                getString(R.string.loc_swfc), getString(R.string.web_swfc)));
+        sports.add(new Poi(R.drawable.sufc, getString(R.string.poi_sufc),
+                getString(R.string.loc_sufc), getString(R.string.web_sufc)));
+        sports.add(new Poi(R.drawable.pondsforge, getString(R.string.poi_pondslc),
+                getString(R.string.loc_pondslc), getString(R.string.web_pondslc)));
+        sports.add(new Poi(R.drawable.hillslc, getString(R.string.poi_hillslc), getString(R.string.loc_hillslc),
+                getString(R.string.web_hillslc)));
+        sports.add(new Poi(R.drawable.eis, getString(R.string.poi_eislc), getString(R.string.loc_eislc),
+                getString(R.string.web_eislc)));
+        sports.add(new Poi(R.drawable.concord, getString(R.string.poi_concordlc), getString(R.string.loc_concordlc),
+                getString(R.string.web_concordlc)));
+        sports.add(new Poi(R.drawable.icesheff, getString(R.string.poi_icesheff), getString(R.string.loc_icesheff),
+                getString(R.string.web_iceshefflc)));
 
         PoiAdapter adapter = new PoiAdapter(getActivity(), sports);
 

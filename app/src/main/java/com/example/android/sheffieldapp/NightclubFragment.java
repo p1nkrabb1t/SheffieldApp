@@ -26,20 +26,20 @@ public class NightclubFragment extends Fragment {
 
         // Create an arraylist of custom objects
         final ArrayList<Poi> clubs = new ArrayList<>();
-        clubs.add(new Poi(R.drawable.area, "Area",
-                "1 Burgess St, Sheffield, S1 2HF", "http://www.areasheffield.co.uk"));
-        clubs.add(new Poi(R.drawable.plug, "Plug Warehouse",
-                "14-16 Matilda St, Sheffield, S1 4QD", "https://the-plug.com"));
-        clubs.add(new Poi(R.drawable.code, "Code:",
-                "28 Eyre St, Sheffield, S1 4QY", "http://codesheffield.com"));
-        clubs.add(new Poi(R.drawable.leadmill, "The Leadmill",
-                "6 Leadmill Rd, Sheffield, S1 4SE", "https://www.leadmill.co.uk"));
-        clubs.add(new Poi(R.drawable.corp, "Corporation",
-                "2 Milton St, Sheffield, S1 4JU", "http://www.corporation.org.uk"));
-        clubs.add(new Poi(R.drawable.tnk, "The Night Kitchen",
-                "7 Smithfield, Sheffield, S3 7AW", "http://www.thenightkitchen.org"));
-        clubs.add(new Poi(R.drawable.hopeworks, "Hope Works",
-                "1A, Sussex Rd, Sheffield, S4 7YQ", "http://www.hope-works.co.uk"));
+        clubs.add(new Poi(R.drawable.area, getString(R.string.poi_area),
+                getString(R.string.loc_area), getString(R.string.web_area)));
+        clubs.add(new Poi(R.drawable.plug, getString(R.string.poi_plug),
+                getString(R.string.loc_plug), getString(R.string.web_plug)));
+        clubs.add(new Poi(R.drawable.code, getString(R.string.poi_code),
+                getString(R.string.loc_code), getString(R.string.web_code)));
+        clubs.add(new Poi(R.drawable.leadmill, getString(R.string.poi_leadhill),
+                getString(R.string.loc_leadmill), getString(R.string.web_leadmill)));
+        clubs.add(new Poi(R.drawable.corp, getString(R.string.poi_corp),
+                getString(R.string.loc_corp), getString(R.string.web_corp)));
+        clubs.add(new Poi(R.drawable.tnk, getString(R.string.poi_tnk),
+                getString(R.string.loc_tnk), getString(R.string.web_tnk)));
+        clubs.add(new Poi(R.drawable.hopeworks, getString(R.string.poi_hopeworks),
+                getString(R.string.loc_hopeworks), getString(R.string.web_hopeworks)));
 
 
         PoiAdapter adapter = new PoiAdapter(getActivity(), clubs);

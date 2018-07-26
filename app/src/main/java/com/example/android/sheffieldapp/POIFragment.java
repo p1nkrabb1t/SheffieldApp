@@ -37,7 +37,7 @@ public class POIFragment extends Fragment {
         poi.add(new Poi(R.drawable.fountains, getString(R.string.poi_peace), getString(R.string.loc_peace),
                 getString(R.string.web_peace)));
         poi.add(new Poi(R.drawable.botanical, getString(R.string.poi_botanical),
-                getString(R.string.loc_botanical), getString(R.string.botanical)));
+                getString(R.string.loc_botanical), getString(R.string.web_botanical)));
         poi.add(new Poi(R.drawable.chatsworth, getString(R.string.poi_chatsworth),
                 getString(R.string.loc_chatsworth), getString(R.string.web_chatsworth)));
         poi.add(new Poi(R.drawable.kelham, getString(R.string.poi_kelham),
