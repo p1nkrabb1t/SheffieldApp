@@ -7,4 +7,68 @@
     <string name="image">image</string>
     <string name="travel_type_icon">travel type icon</string>
 
+    //travel
+    <string name="poi_DSA">Doncaster Sheffield Airport</string>
+    <string name="loc_DSA">First Ave, Doncaster, DN9 3RH</string>
+    <string name="poi_station_sheff">Sheffield Station</string>
+    <string name="loc_station_sheff">Sheffield, S1 2BP</string>
+    <string name="poi_bus_sheff">Sheffield Interchange</string>
+    <string name="loc_bus_sheff">Archway Centre, Pond Square, Sheffield, S1 2BD</string>
+    <string name="poi_station_mhall">Meadowhall Interchange</string>
+    <string name="loc_station_mhall">Sheffield, S9 1EQ</string>
+    <string name="poi_bus_hills">Hillsborough Interchange</string>
+    <string name="loc_bus_hills">Sheffield, S6 2LG</string>
+    <string name="poi_taxi_city">City Taxis</string>
+    <string name="tel_taxi_city">0114 2393939</string>
+    <string name="poi_taxi_merc">Mercury Taxis</string>
+    <string name="tel_taxi_merc">0114 266 2662</string>
+    <string name="poi_taxi_excel">Excel Taxis</string>
+    <string name="tel_taxi_excel">0114 245 0000</string>
+    <string name="poi_taxi_exp">Express Taxis</string>
+    <string name="tel_taxi_exp">0114 243 0430</string>
+
+    //points of interest
+    <string name="poi_cathedral">Sheffield Cathedral</string>
+    <string name="loc_cathedral">Church St, Sheffield, S1 1HA</string>
+    <string name="poi_cityhall">City Hall</string>
+    <string name="loc_cityhall">Barker\'s Pool, Sheffield, S1 2JA</string>
+    <string name="poi_millenium">Millenium Gallery</string>
+    <string name="loc_millenium">48 Arundel Gate, Sheffield, S1 2PP</string>
+    <string name="poi_winter">Winter Garden</string>
+    <string name="loc_winter">90 Surrey St, Sheffield, S1 2LH</string>
+    <string name="poi_peace">Peace Gardens</string>
+    <string name="loc_peace">50 Pinstone St, Sheffield, S1 2HH</string>
+    <string name="poi_botanical">Botanical Gardens</string>
+    <string name="loc_botanical">Clarkehouse Rd, Sheffield, S10 2LN</string>
+    <string name="poi_chatsworth">Chatsworth House</string>
+    <string name="loc_chatsworth">Bakewell, DE45 1PP</string>
+    <string name="poi_kelham">Kelham Island Museum</string>
+    <string name="loc_kelham">Alma St, Sheffield, S3 8RY</string>
+    <string name="poi_arena">Sheffield Arena</string>
+    <string name="loc_arena">Broughton Ln, Sheffield, S9 2DF</string>
+    <string name="poi_crucible">Crucible Theatre</string>
+    <string name="loc_crucible">55 Norfolk Street, Sheffield, S1 1DA</string>
+    <string name="poi_mhall">Meadowhall Shopping Centre</string>
+    <string name="loc_mhall">Sheffield, S9 1EP</string>
+    <string name="poi_butterfly">Butterfly House</string>
+    <string name="loc_butterfly">Woodsetts Rd, North Anston, Sheffield, S25 4EQ</string>
+
+
+    <string name="web_cathedral">http://www.sheffieldcathedral.org</string>
+    <string name="web_cityhall">https://sheffieldcityhall.sivtickets.com</string>
+    <string name="web_millenium">http://www.museums-sheffield.org.uk/museums/millennium-gallery/home</string>
+    <string name="web_winter">https://www.sheffield.gov.uk/home/parks-sport-recreation/public-spaces/winter-garden.html</string>
+    <string name="web_peace">https://www.sheffield.gov.uk/home/parks-sport-recreation/public-spaces/peace-gardens</string>
+    <string name="botanical">http://www.sbg.org.uk</string>
+    <string name="web_chatsworth">https://www.chatsworth.org</string>
+    <string name="web_kelham">http://www.simt.co.uk</string>
+    <string name="web_arena">http://www.flydsaarena.co.uk</string>
+    <string name="web_crucible">https://www.sheffieldtheatres.co.uk</string>
+    <string name="web_mhall">https://www.meadowhall.co.uk</string>
+    <string name="web_butterfly">https://www.butterflyhouse.co.uk</string>
+
+    //sports
+    
+
+
 </resources>

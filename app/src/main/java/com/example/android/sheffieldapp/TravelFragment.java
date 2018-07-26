@@ -26,19 +26,19 @@ public class TravelFragment extends Fragment {
 
         // Create an arraylist of custom objects
         final ArrayList<Poi> travel = new ArrayList<Poi>();
-        travel.add(new Poi("Doncaster Sheffield Airport", "First Ave, Doncaster, DN9 3RH", R.drawable.flight,
+        travel.add(new Poi(getString(R.string.poi_DSA), getString(R.string.loc_DSA), R.drawable.flight,
                 R.drawable.parking));
-        travel.add(new Poi("Sheffield Station", "Sheffield, S1 2BP", R.drawable.train,
+        travel.add(new Poi(getString(R.string.poi_station_sheff), getString(R.string.loc_station_sheff), R.drawable.train,
                 R.drawable.tram, R.drawable.taxi, R.drawable.parking));
-        travel.add(new Poi("Sheffield Interchange", "Archway Centre, Pond Square, Sheffield, S1 2BD",
+        travel.add(new Poi(getString(R.string.poi_bus_sheff), getString(R.string.loc_bus_sheff),
                 R.drawable.bus));
-        travel.add(new Poi("Meadowhall Interchange", "Sheffield, S9 1EQ", R.drawable.train,
+        travel.add(new Poi(getString(R.string.poi_station_mhall), getString(R.string.loc_station_mhall), R.drawable.train,
                 R.drawable.bus, R.drawable.tram, R.drawable.taxi, R.drawable.parking));
-        travel.add(new Poi("Hillsborough Interchange", "Sheffield, S6 2LG", R.drawable.bus));
-        travel.add(new Poi("City Taxis", "0114 2393939", R.drawable.taxi));
-        travel.add(new Poi("Mercury Taxis", "0114 266 2662", R.drawable.taxi));
-        travel.add(new Poi("Excel Taxis", "0114 245 0000", R.drawable.taxi));
-        travel.add(new Poi("Express Taxis", "0114 243 0430", R.drawable.taxi));
+        travel.add(new Poi(getString(R.string.poi_bus_hills), getString(R.string.loc_bus_hills), R.drawable.bus));
+        travel.add(new Poi(getString(R.string.poi_taxi_city), getString(R.string.tel_taxi_city), R.drawable.taxi));
+        travel.add(new Poi(getString(R.string.poi_taxi_merc), getString(R.string.tel_taxi_merc), R.drawable.taxi));
+        travel.add(new Poi(getString(R.string.poi_taxi_excel), getString(R.string.tel_taxi_excel), R.drawable.taxi));
+        travel.add(new Poi(getString(R.string.poi_taxi_exp), getString(R.string.tel_taxi_exp), R.drawable.taxi));
 
         TravelAdapter adapter = new TravelAdapter(getActivity(), travel);
 
